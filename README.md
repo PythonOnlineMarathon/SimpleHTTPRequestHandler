@@ -13,12 +13,12 @@
    ```python
    [   
        {
-           "id": int,
-           "username": str,
-           "firstName": str,
-           "lastName": str,
-           "email": str,
-           "password": str,
+        "id": 1,
+        "username": "theUser",
+        "firstName": "John",
+        "lastName": "James",
+        "email": "john@email.com",
+        "password": "12345",
        }
    ]
    ```
