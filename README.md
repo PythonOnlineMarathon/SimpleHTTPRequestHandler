@@ -65,7 +65,7 @@
   if body not valid return status code `400` and empty json
 - if url `/user` add user to list `USERS_LIST` and return status code `201` and this user, if id already exists then
   return status code `400` and empty json
-- if url `/createWithList` add users to list `USERS_LIST` and return status code `201` and these users, if at least some
+- if url `/user/createWithList` add users to list `USERS_LIST` and return status code `201` and these users, if at least some
   id already exists then return status code `400` and empty json
 
 ### update `do_PUT` method:
@@ -91,7 +91,7 @@ if url `/user/{id}`
     "error": "not valid request data"
   }
   ```
-- if id already exists return status code `404` and json
+- if id not already exists return status code `404` and json
   ```json
   {
     "error": "User not found"
